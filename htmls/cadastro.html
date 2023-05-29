@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!--OK-->
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro | Seja bem-vindo!</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" type="text/css" href="/css/cadastro.css">
+    <link rel="icon" type="image" href="/img/logo.png"></link>   
+    <style>
+        .content {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" id="card">
+        <img src="/img/logo.png" alt="Imagem de perfil" id="ImgPerfil">
+        <form class="card-form">
+            <div class="card-content">
+                <div class="card-content-area">
+                    <h2 class="h2Card">Criação de Usuário</h2> 
+                    <label for="usuario" class="lblUsuario"><b>Usuário:</b></label>
+                    <input type="text" id="usuario" autocomplete="off" placeholder="Nome de usuário" required autofocus>
+                
+                    <label for="password" class="lblSenha"><b>Senha:</b></label>
+                    <input type="password" id="password" autocomplete="off" placeholder="Digite uma senha" min="8" required autofocus aria-describedby="passwordHelpInline">
+                    <label for="password" class="lblRepeteSenha"><b>Repita a Senha:</b></label>
+                    <input type="password" id="password" autocomplete="off" placeholder="Insira a senha novamente" min="8" required autofocus aria-describedby="passwordHelpInline">
+                    <span id="passwordHelpInline" class="form-text">
+                        <pre class="content">
+ <i>Mínimo de 8 caracteres;
+    Pelo menos uma letra maiúscula;
+    Letras e números;
+ </i>
+                        </pre>
+                    </span>
+                </div>
+            </div>
+            <br><br>
+            <div class="card-footer">
+                <input type="submit" value="Criar" class="submit" aria-label="Fazer login" id="IrParaMenu">
+                <input type="submit" value="Cancelar" class="submit" aria-label="Cadastrar-se" id="IrParaLogin">
+                <br>                
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnMenu = document.getElementById("IrParaMenu");
+            btnMenu.addEventListener("click", function() {
+                window.location.href = "menu.html";
+            });
+
+            var btnCancelar = document.getElementById("IrParaLogin");
+            btnCancelar.addEventListener("click", function() {
+                window.location.href = "login.html";
+            });
+        });
+    </script>
+</body>
+</html>
