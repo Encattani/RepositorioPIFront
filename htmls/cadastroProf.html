@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-BR">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastro Professor</title>
+        <link rel="stylesheet" type="text/css" href="/css/cadastroAluno.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">        
+        <link rel="icon" type="image" href="/img/logo.png">
+        <script src="/js/login.js"></script>
+    </head>
+    <body>           
+        <div class="card" id="card">   
+          <img src="/img/logo.png" alt="Imagem de perfil" id="ImgPerfil">            
+          <br><br>
+          <h2> Cadastrar Professor</h2>     
+          <form>
+            <div class="form-row">
+              <label for="validationDefault01">Nome Completo:</label>
+              <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo"  required>
+            </div>
+            <div class="form-row">
+              <label for="validationDefault03">Materia:</label>
+              <input type="text" class="form-control" id="inputContato" placeholder="Materia" required>
+            </div>
+            <div class="form-row">
+              <label for="validationDefault03">Contato:</label>
+              <input type="text" class="form-control" id="inputContato" placeholder="Contato" required>
+            </div>
+            <div class="form-row">
+              <div class="form-item">
+                <label for="turno">Turno:</label>
+                <select class="turno">
+                  <option></option>
+                  <option>Manhã</option>
+                  <option>Tarde</option>
+                  <option>Noite</option>
+                </select>
+                <label for="inputNascimento">Nascimento:</label>
+                <input type="date" class="form-control" id="inputNascimento" required>
+              </div>
+            </div>
+            <div class="footer">
+              <input type="submit" value="Cadastrar" class="submit" aria-label="Cadastrar" id="Cadastrar">
+              <input type="button" value="Cancelar" class="cancelar" aria-label="Cancelar" id="CancelarCadastro">
+            </div>
+          </form>
+        </div>
+
+        <script>
+
+          document.addEventListener("DOMContentLoaded", function(){
+           var btnAddProf = document.getElementById("Cadastrar");
+                
+           btnAddProf.addEventListener("click", function() {
+           window.location.href = "consultaProfessores.html";
+
+          });
+          })
+
+          document.addEventListener("DOMContentLoaded", function(){
+             var btnVoltar = document.getElementById("CancelarCadastro");
+                  
+             btnVoltar.addEventListener("click", function() {
+             window.location.href = "consultaProfessores.html";
+            });
+        })
+
+        </script>
+
+    </body>
+</html>
