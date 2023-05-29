@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Remover Professor</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="/img/logo.png"></link>        
+    <link rel="stylesheet" type="text/css" href="/css/remover.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">        
+</head>
+<body>
+    <div class="card" id="card">               
+        <form>
+            <img src="/img/logo.png" alt="Imagem de perfil" id="ImgPerfil">
+            <div class="form-row">              
+                  <h2>Digite o CPF do professor:</h2>
+                  <input type="number" class="form-control" id="inputRA" placeholder="000.000.000-00" min="1" required>
+            </div>                          
+                
+            <div class="footer">
+                <input type="submit" value="Excluir" class="submit" aria-label="Excluir" id="Excluir">                        
+                <input type="button" value="Cancelar" class="cancelar" aria-label="Cancelar" id="CancelarCadastro">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            var btnRemoverAluno = document.getElementById("Cadastrar");
+          
+            btnRemoverAluno.addEventListener("click", function() {
+                window.location.href = "consultaAlunos.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function(){
+            var btnCancelarRemoverProf = document.getElementById("CancelarCadastro");
+          
+            btnCancelarRemoverProf.addEventListener("click", function() {
+                window.location.href = "consultaProfessores.html";
+            });
+        });
+    </script>
+    
+</body>
+</html>

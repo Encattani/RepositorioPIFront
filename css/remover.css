@@ -1,0 +1,102 @@
+html, body {
+  background: linear-gradient(to bottom right, #9bbabd, #51777c, #c4d5c4);
+  font-family: "Century Gothic", Arial, sans-serif;
+  font-size: 15px;
+  height: 100%;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  margin-top: 5%;
+}
+
+#card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #414442;
+  color: #D0D5D8;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 25%;
+  min-height: 190px;
+  margin: auto;
+  width: 20%;
+  min-width: 25%;
+  padding: 20px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+#ImgPerfil{
+  position: absolute;
+  right: 0%;
+  margin-top: -13%;
+  height: auto;
+  width: auto;    
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.form-control{
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+  border: 0px;
+  outline: none;
+  color: #252525;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10%;
+}
+
+#Excluir {
+  background-color: #377d63;
+  border: none;
+  color: white;
+  padding: 4% 4%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+  margin-bottom: 5%;
+  margin-top: -5%;
+}
+
+.cancelar {
+  background-color: #502F2F;
+  border: none;
+  color: white;
+  padding: 4% 4%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+  margin-bottom: 5%;
+  margin-top: -5%;
+}
+
+.cancelar:hover {
+  background-color: #707844;
+}
