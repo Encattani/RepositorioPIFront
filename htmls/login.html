@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!--OK-->
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-BR">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Acesso | Objectivo</title>
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+        <link rel="icon" type="image" href="/img/logo.png"></link>        
+    </head>
+    <body>
+        <div id="login" class="container-fluid">
+            <div class="card" id="card">
+                <form class="card1">
+                    <div class="card-header">
+                        <div class="card-header-content">
+                            <img src="/img/logo.png"Imagem de perfil" id="ImgPerfil">
+                            <h2 class="h2Card">Login de Rede</h2> 
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-content-area">
+                            <label for="usuario" class="lblUsuario"><b>Usuário:</b></label>
+                            <input type="text" id="usuario" autocomplete="off" placeholder="Usuário" required autofocus>
+                        <br>
+                            <label for="password" class="lblSenha"><b>Senha:</b></label>
+                            <input type="password" id="password" autocomplete="off" placeholder="Senha" min="8" required autofocus aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="checkbox-container" id="btnRobo">
+                            <input type="checkbox">Não sou um robô.
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <input type="submit" value="LogIn" class="submit" aria-label="Fazer login" id="IrParaMenu">
+                        <input type="submit" value="SignIn" class="submit" aria-label="Cadastrar-se" id="IrParaCadastro">
+                        <br><br>
+                        <a href="#" class="recuperar_senha" id="IrParaRecSenha">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                 var btnMenu = document.getElementById("IrParaMenu");
+                        btnMenu.addEventListener("click", function() {
+                        window.location.href = "menu.html";
+
+                        
+                    })});
+                    
+                    var btnCadastro = document.getElementById("IrParaCadastro");
+                           btnCadastro.addEventListener("click", function(){
+                           window.location.href = "cadastro.html" ;   
+                           })
+        </script>
+
+
+    </body>
+</html>
