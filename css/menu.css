@@ -3,7 +3,7 @@ html, body { /*Estilização OK*/
     font-family: "Century Gothic", Arial, sans-serif;
     font-size: 15px;
     height: 100%;
-}
+} 
 
 #login {
     max-width: 500px;
