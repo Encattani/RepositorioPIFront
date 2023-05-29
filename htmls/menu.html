@@ -1,0 +1,83 @@
+<!DOCTYPE html> <!--Estilização OK-->
+<html>
+<head>
+    <meta charset="UTF-8" lang="pt-BR">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" type="text/css" href="/css/menu.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image" href="/img/logo.png">
+</head>
+<body>
+    <div id="login">
+        <div class="card" id="card">
+            <div class="card-header-content">
+                <img src="/img/logo.png" alt="Imagem de perfil" id="ImgPerfil">
+                <h2 class="h2Card" style="color:white;">BEM-VINDO ADMIN!</h2>
+            </div>
+            <div class="container">
+                <div class="cardProfs">
+                    <h3>PROFESSORES</h3>
+                    <input type="submit" value="Adicionar Prof." class="btnMenu" id="AdicionarProf">
+                    <br>
+                    <input type="submit" value="Consultar Prof." class="btnMenu" id="ConsultarProf">
+                </div>
+                <div class="cardAlunos">
+                    <h3>ALUNOS</h3>
+                    <input type="submit" value="Adicionar Aluno" class="btnMenu" id="AdicionarAluno">
+                    <br>
+                    <input type="submit" value="Consultar Aluno" class="btnMenu" id="ConsultarAluno">
+                </div>
+            </div>
+            <br>
+            <footer>
+                <input type="button" value="Sair" id="btnVoltar" style="background-color: #461515; color: white; border-radius: 10px;">
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnLogProf = document.getElementById("ConsultarProf");
+          
+            btnLogProf.addEventListener("click", function() {
+                window.location.href = "consultaProfessores.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnLogAluno = document.getElementById("ConsultarAluno");
+                  
+            btnLogAluno.addEventListener("click", function() {
+                window.location.href = "consultaAlunos.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnAddAluno = document.getElementById("AdicionarAluno");
+                  
+            btnAddAluno.addEventListener("click", function() {
+                window.location.href = "cadastroAluno.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnAddProf = document.getElementById("AdicionarProf");
+                  
+            btnAddProf.addEventListener("click", function() {
+                window.location.href = "cadastroProf.html";
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            var btnVoltar = document.getElementById("btnVoltar");
+                  
+            btnVoltar.addEventListener("click", function() {
+                window.location.href = "login.html";
+            });
+        });
+    </script>
+</body>
+</html>
